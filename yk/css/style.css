@@ -1,0 +1,233 @@
+@import url(reset.css);
+html,
+body,
+.quan {
+  width: 100%;
+  height: 100%;
+  background: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.quan {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.quan header {
+  width: 100%;
+  height: auto;
+  background: #f4f4f4;
+}
+.quan header .h_da {
+  width: 100%;
+  height: auto;
+  background: none;
+  position: relative;
+}
+.quan header .h_da img {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.quan header .h_ong {
+  position: absolute;
+  top: 0.8rem;
+  left: 30%;
+  width: 40%;
+  height: 2.4rem;
+  background: #4d1616;
+  z-index: 999;
+  border-radius: 20px;
+}
+.quan header .h_ong h3 {
+  width: 100%;
+  height: 2.4rem;
+  background: #4d1616;
+  border-radius: 20px;
+  position: relative;
+}
+.quan header .h_ong h3 img {
+  width: auto;
+  height: 0.7rem;
+  background: none;
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+}
+.quan header .h_ong h3 input {
+  width: 100%;
+  height: 2.4rem;
+  background: #4d1616;
+  padding-left: 0.4rem;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+.quan .wrap {
+  width: 100%;
+  height: auto;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-flex: 1;
+  overflow: hidden;
+}
+.quan .wrap .wrap3 {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.quan .wrap .wrap2 {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.quan .wrap .wrap1 {
+  width: 100%;
+  height: auto;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.quan .wrap .wrap1 section {
+  -webkit-box-flex: 1;
+  background: #f4f4f4;
+  overflow: auto;
+}
+.quan .wrap .wrap1 section::-webkit-scrollbar {
+  width: 0;
+}
+.quan .wrap .wrap1 section .s_nav {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 2.7rem;
+  background: none;
+  margin-top: 1.3rem;
+}
+.quan .wrap .wrap1 section .s_nav h2 {
+  width: 3.2rem;
+  height: 2.7rem;
+  background: none;
+  padding-top: 0.8rem;
+  padding-left: 1.3rem;
+  box-sizing: border-box;
+}
+.quan .wrap .wrap1 section .s_nav h2 img {
+  width: auto;
+  height: 1.2rem;
+  background: none;
+}
+.quan .wrap .wrap1 section .s_nav h3 {
+  -webkit-box-flex: 1;
+  width: 100%;
+  height: 2.7rem;
+  background: none;
+}
+.quan .wrap .wrap1 section .s_nav h3 input {
+  width: 100%;
+  height: 2.7rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+.quan .wrap .wrap1 section .s_top {
+  width: 100%;
+  height: auto;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: 0.6rem;
+  padding: 0 0.3rem;
+  box-sizing: border-box;
+}
+.quan .wrap .wrap1 section .s_top dl {
+  -webkit-box-flex: 1;
+  text-align: center;
+  margin: 0 0.6rem;
+  padding: 0.5rem 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.quan .wrap .wrap1 section .s_top dl dt img {
+  width: auto;
+  height: 1.6rem;
+  background: none;
+}
+.quan .wrap .wrap1 section .s_main {
+  width: 100%;
+  height: 3.3rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: 1.2rem;
+  border-bottom: 1px solid #f7f7f7;
+}
+.quan .wrap .wrap1 section .s_main h2 {
+  line-height: 3.2rem;
+  padding-left: 1.2rem;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+}
+.quan .wrap .wrap1 section .s_main h2 img {
+  width: 2.2rem;
+  height: 1.2rem;
+  background: none;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+}
+.quan .wrap .wrap1 section .s_main1 {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 1rem 0.7rem;
+  box-sizing: border-box;
+}
+.quan .wrap .wrap1 section .s_main1 dl {
+  -webkit-box-flex: 1;
+  margin: 0 0.4rem;
+}
+.quan .wrap .wrap1 section .s_main1 dl dt {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.quan .wrap .wrap1 section .s_main1 dl dt img {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.quan .wrap .wrap1 section .s_main1 dl dd {
+  padding-top: 0.3rem;
+  box-sizing: border-box;
+}
+.quan .wrap .wrap4 {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.quan footer {
+  width: 100%;
+  height: 4rem;
+  background: #f4f4f4;
+  border-top: 1px solid #fafafa;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.quan footer .yan dd {
+  color: #0187fa;
+}
+.quan footer dl {
+  -webkit-box-flex: 1;
+  text-align: center;
+  padding-top: 0.4rem;
+  box-sizing: border-box;
+}
+.quan footer dl dt img {
+  width: auto;
+  height: 1.5rem;
+  background: none;
+}

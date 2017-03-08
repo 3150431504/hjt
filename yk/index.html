@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+</head>
+<body>
+	<div class="quan">
+		<header>
+					<div class="h_da">
+						<!--<img src="img/images/yue2_1_02.jpg" />-->
+						<div class="swiper-container">
+					        <div class="swiper-wrapper">
+					            <div class="swiper-slide"><img src="img/images/yue2_1_02.jpg" /></div>
+					            <div class="swiper-slide"><img src="img/images/yue2_1_02.jpg" /></div>
+					            <div class="swiper-slide"><img src="img/images/yue2_1_02.jpg" /></div>
+					            <div class="swiper-slide"><img src="img/images/yue2_1_02.jpg" /></div>
+					            <div class="swiper-slide"><img src="img/images/yue2_1_02.jpg" /></div>
+					            <div class="swiper-slide"><img src="img/images/yue2_1_02.jpg" /></div>
+					            <div class="swiper-slide"><img src="img/images/yue2_1_02.jpg" /></div>
+					   		 </div>
+						</div>
+					</div>
+					<div class="h_ong">
+							<h3><input type="text" placeholder="绑定机顶盒"/><img src="img/images/yue2_2_03.jpg"/></h3>
+							
+					</div>
+					
+				</header>
+		<div class="wrap">
+			<div class="wrap1">
+				
+				<section>
+					<div>
+					<div class="s_nav">
+						<h2><img src="img/images/yue3_1_10.jpg"/></h2>
+						<h3><input type="text" placeholder="搜索想要看的电视节目或频道"/></h3>
+					</div>
+					<div class="s_top">
+						<dl style="background: #47d1f5;">
+							<dt><img src="img/images/yue4_1_03.jpg"/></dt>
+							<dd>抽奖</dd>
+						</dl>
+						<dl style="background:#fd5f3a ;">
+							<dt><img src="img/images/yue4_1_05.jpg"/></dt>
+							<dd>频道</dd>
+						</dl>
+						<dl style="background:#ffa82c ;">
+							<dt><img src="img/images/yue4_1_07.jpg"/></dt>
+							<dd>电影</dd>
+						</dl>
+						<dl style="background:#bd6fff ;">
+							<dt><img src="img/images/yue4_1_09.jpg"/></dt>
+							<dd>综艺</dd>
+						</dl>
+					</div>
+					<div class="s_top">
+						<dl style="background: #fa4566;">
+							<dt><img src="img/images/yue4_1_15.jpg"/></dt>
+							<dd>直播</dd>
+						</dl>
+						<dl style="background:#41cbbc ;">
+							<dt><img src="img/images/yue4_1_16.jpg"/></dt>
+							<dd>体育</dd>
+						</dl>
+						<dl style="background:#8960fe ;">
+							<dt><img src="img/images/yue4_1_17.jpg"/></dt>
+							<dd>新闻</dd>
+						</dl>
+						<dl style="background:#ff7d2f;">
+							<dt><img src="img/images/yue4_1_18.jpg"/></dt>
+							<dd>收藏</dd>
+						</dl>
+					</div>
+					<div class="s_main">
+						<h2>电视剧<img src="img/images/yue5_1_24.jpg"/></h2>
+					</div>
+					<div class="s_main1">
+						<dl>
+							<dt><img src="img/images/6_2_03.jpg"/></dt>
+							<dd>下午剧场:战火中的兄弟</dd>
+						</dl>
+						<dl>
+							<dt><img src="img/images/6_2_05.jpg"/></dt>
+							<dd>下午剧场:卧底(26)</dd>
+						</dl>
+					</div>
+					<div class="s_main1">
+						<dl>
+							<dt><img src="img/images/6_2_03.jpg"/></dt>
+							<dd>下午剧场:战火中的兄弟</dd>
+						</dl>
+						<dl>
+							<dt><img src="img/images/6_2_05.jpg"/></dt>
+							<dd>下午剧场:卧底(26)</dd>
+						</dl>
+					</div>
+					</div>
+				</section>
+			</div>
+			<div class="wrap2" style="font-size: 30px;">22222精彩直播</div>
+			<div class="wrap3" style="font-size: 30px;">
+				333333精彩直播
+			</div>
+			<div class="wrap4" style="font-size: 30px;">44444精彩直播</div>
+		</div>
+		<footer>
+			<dl class="yan">
+				<dt><img src="img/images/yue_1_07.jpg"/></dt>
+				<dd>精彩直播</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/images/yue_1_05.jpg"/></dt>
+				<dd>小米电视</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/images/yue_1_03.jpg"/></dt>
+				<dd>万能遥控</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/images/yue_1_09.jpg"/></dt>
+				<dd>个人中心</dd>
+			</dl>
+		</footer>
+	</div>
+</body>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script>
+var myscroll=new IScroll(".quan .wrap .wrap1 section",{
+					scrollbars:true,
+					disableMouse:true,
+					disablePointer:true,
+					scrollbars:'custom'
+				});
+var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+//      spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+	$(function(){
+		$(".quan footer dl").click(function(){
+			$(this).addClass("yan").siblings().removeClass("yan");
+			$(".quan .wrap>div").eq($(this).index()).show().siblings().hide();
+		})
+	})
+</script>
+</html>
