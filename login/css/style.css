@@ -1,0 +1,136 @@
+@import url("reset.css");
+html,
+body,
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+html {
+  font-size: 62.5%;
+}
+.wrapper {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: relative;
+}
+.wrapper header {
+  width: 100%;
+  height: 40px;
+  background: #ff614c;
+  position: relative;
+}
+.wrapper header h1 {
+  width: 100%;
+  height: 40px;
+  background: none;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+}
+.wrapper section {
+  -webkit-box-flex: 1;
+  padding: 28px 10px 0 10px;
+  box-sizing: border-box;
+}
+.wrapper section .banner {
+  width: 100%;
+  height: auto;
+  background: none;
+  text-align: center;
+}
+.wrapper section .banner img {
+  width: 9.2rem;
+  height: 9rem;
+  background: none;
+}
+.wrapper section div {
+  background: pink;
+  width: 100%;
+  height: 35px;
+  background: 0;
+  position: relative;
+  margin-bottom: 25px;
+}
+.wrapper section div span {
+  position: absolute;
+  left: 15px;
+  top: 7.5px;
+}
+.wrapper section div span img {
+  width: 14px;
+  height: 17px;
+  background: 0;
+}
+.wrapper section div input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  border: 1px solid #c0c0c0;
+  padding-left: 53px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  outline: none;
+}
+.wrapper section button {
+  width: 100%;
+  height: 35px;
+  background: #f85453;
+  border: none;
+  margin-top: 13px;
+  font-size: 14px;
+  color: white;
+}
+.wrapper section button a {
+  color: white;
+}
+.wrapper section p {
+  margin-top: 25px;
+  padding-left: 6px;
+  text-align: center;
+  color: #ababab;
+}
+.wrapper section p span {
+  margin: 0 2.5rem;
+}
+#popBox_1 {
+  width: 100%;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+#popBox_1 #popBox {
+  height: 197px;
+  width: 80%;
+  background: red;
+  opacity: 1;
+  position: absolute;
+  top: 220px;
+  display: none;
+  z-index: 1500;
+}
+#popBox_1 #popBox h1 {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  margin-top: 55px;
+}
+#popBox_1 #popBox span {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 44px;
+  padding: 10px 24px;
+  background: #fef4f3;
+}
+#myDiv {
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}

@@ -1,0 +1,126 @@
+@import url("reset.css");
+.full(@w,@h,@bg)
+{
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+html,body,.wrapper{
+    .full(100%,100%,#fff);
+}
+html{
+    font-size: 62.5%;
+}
+.wrapper{
+    .box;
+    position: relative;
+    header{
+        .full(100%,40px,#ff614c);
+        position: relative;
+        h1{
+            .full(100%,40px,none);
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            line-height: 40px;
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        padding: 28px 10px 0 10px;
+        box-sizing: border-box;
+        .banner{
+            .full(100%,auto,none);
+            text-align: center;
+            img{
+                .full(9.2rem,9rem,none);
+            }
+        }
+        div{
+            background: pink;
+            .full(100%,35px,0);
+            position: relative;
+            margin-bottom: 25px;
+            span{
+                position: absolute;
+                left: 15px;
+                top: 7.5px;
+                img{
+                    .full(14px,17px,0);
+                }             
+            }
+            input{
+                .full(100%,100%,none);
+                border: none;
+                border: 1px solid #c0c0c0;
+                padding-left: 53px;
+                box-sizing: border-box;
+                border-radius: 3px;
+                outline:none;      
+            }
+        }
+        button{
+            .full(100%,35px,#f85453);
+            border: none;
+            margin-top: 13px;
+            font-size: 14px;
+            color: white;
+            a{
+                color: white;                
+            }
+        }
+        p{
+            margin-top: 25px;
+            padding-left: 6px;
+            text-align: center;
+            color: #ababab;
+            span{
+                margin: 0 2.5rem;
+            }
+        }
+    }
+}
+#popBox_1{
+    width:100%;
+    padding: 3rem;
+    box-sizing: border-box;
+    #popBox {
+        height: 197px;
+        width:80%;
+        background: red;
+        opacity: 1;
+        position: absolute;
+        top: 220px;
+        display: none;
+        z-index: 1500;
+        h1{
+            font-size: 16px;
+            text-align: center;
+            color: white;
+            margin-top: 55px;
+        }
+        span{
+            display: block;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 44px;
+            padding: 10px 24px;
+            background: #fef4f3;
+        }
+    }
+}
+
+#myDiv {
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
