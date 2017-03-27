@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<select name="" id="aa" >
+  	   <option value="">请选择省</option>  	
+	</select>
+	<select name="" id="bb">
+		<option value="">请选择市</option>
+	</select>
+     <select name="" id="cc">
+		<option value="">请选择区</option>
+	</select>
+	<script>
+    $(function(){
+       function getcity(){
+       	$.ajax({
+       		type:'get',
+       		url:'json/city.json',
+       		dataType:'json',
+            success:function(data){
+             city=data.citylist;
+             $.each(city,function(k,v){
+              $('#aa').append('<option>'+v.p+'</option>');  
+             })  
+            } 
+       	})
+       }
+       getcity();
+       $('#aa').change(function(){
+       	$('#bb').html('<option>请选择</option>');
+       	$val=$(this).val();
+       	$.each(city,function(_k,_v){
+           if($val==_v.p){
+           	citys=_v.c;	
+             $.each(citys,function(i,is){
+               $('#bb').append('<option>'+is.n+'</option>');  
+             }) 
+           } 
+       	})
+       })
+        $('#bb').change(function(){
+       	$('#cc').html('<option>请选择</option>');
+       	$v=$(this).val();
+       	console.log($v);
+          $.each(citys,function(_i,_s){
+
+            if($v==_s.n){
+            	citya=_s.a;
+            	console.log(citya);
+            	$.each(citya,function(kk,vv){
+                    $('#cc').append('<option>'+vv.s+'</option>'); 
+            	})
+            }
+       	})
+       })
+    })  
+     
+	</script>
+</body>
+</html>
